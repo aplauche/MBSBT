@@ -1,4 +1,4 @@
-# Moonbase Starter Block Theme
+# MBSBT Starter Block Theme
 
 An opinionated starter theme for WordPress. Forked from Powder Zero.
 
