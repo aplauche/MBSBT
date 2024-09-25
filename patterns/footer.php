@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Default footer
- * Slug: powder-zero/footer
+ * Slug: mbsbt/footer
  * Categories: footer
  * Block Types: core/template-part/footer
  */
@@ -24,7 +24,7 @@
 			<p> · </p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph -->
-			<p><a href="https://powderwp.com/">Theme</a> <?php echo esc_html__( 'by', 'powder-zero' ); ?> <a href="https://briangardner.com/">Brian Gardner</a></p>
+			<p>Theme by <a href="https://antonplauche.com/">Anton Plauche</a></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

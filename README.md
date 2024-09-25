@@ -1,20 +1,19 @@
-# Powder Zero
+# Moonbase Starter Block Theme
 
-A starter block theme for designers and developers.
-
-## Demo
-
-See the Powder Zero theme in action at [https://powderwp.com/zero/](https://powderwp.com/zero/).
-
-## Requirements
-
-- WordPress 6.6+
-- PHP 7.0+
-- License: [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html)
+An opinionated starter theme for WordPress. Forked from Powder Zero.
 
 ## Getting Started
 
-1. Set up a local WordPress development environment, we recommend using [Local](https://localwp.com/).
-2. Ensure you are using WordPress 6.6+.
-3. Clone / download this repository into the `/wp-content/themes/` directory of your new WordPress instance.
-4. In the WordPress admin, use the Appearance > Themes screen to activate Powder Zero.
+Want to just play around in WordPress with a blank instance?
+
+Simply clone this repo and run `npm install` and then `npm run spinup`.
+
+This will fire up the @wp/env package and create a blank dockerized WordPress with this theme ready for development.
+
+## Installation
+
+If you want to install on an existing site, just download the repo and drop into your `/wp-content/themes` directory. Run `npm install` to get all depenedencies and go from there.
+
+### More information coming soon!
+
+Feel free to explore in the meantime...

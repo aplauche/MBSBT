@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Default header
- * Slug: powder-zero/header
+ * Slug: mbsbt/header
  * Categories: header
  * Block Types: core/template-part/header
  */

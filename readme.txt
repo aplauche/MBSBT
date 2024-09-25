@@ -1,5 +1,5 @@
-=== Powder Zero ===
-Contributors: bgardner
+=== MBSBT ===
+Contributors: aplauche
 Requires at least: 6.6
 Tested up to: 6.6
 Requires PHP: 7.0
@@ -9,12 +9,12 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-A starter block theme for designers and developers.
+An opinionated starter theme for WordPress. Forked from Powder Zero.
 
 == Copyright ==
 
-Powder Zero WordPress Theme, (C) 2022-2024 Brian Gardner.
-Powder Zero is distributed under the terms of the GNU GPL.
+MBSBT WordPress Theme, (C) 2024 Anton Plauche.
+MBSBT is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -32,8 +32,3 @@ The included font is licensed under the SIL Open Font License, Version 1.1.
 License URL: https://scripts.sil.org/OFL
 
 Outfit Font
-
-== Screenshot ==
-
-The icon displayed in the theme screenshot is self-designed and declared under GPL License, Version 3.0.
-License URL: https://www.gnu.org/licenses/gpl-3.0.html

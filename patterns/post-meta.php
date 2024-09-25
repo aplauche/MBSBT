@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Post meta
- * Slug: powder-zero/post-meta
+ * Slug: mbsbt/post-meta
  * Inserter: no
  */
 ?>
