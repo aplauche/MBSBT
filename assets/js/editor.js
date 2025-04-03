@@ -62,5 +62,4 @@ wp.domReady( () => {
       wp.blocks.registerBlockStyle(block, style)
     })
   })
-
 })

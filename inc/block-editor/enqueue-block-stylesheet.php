@@ -23,40 +23,6 @@ function register_blocks() {
 add_action( 'init', __NAMESPACE__ . '\register_blocks' );
 
 /**
- * Enqueue custom block stylesheets
- *
- * @return void
- */
-function enqueue_block_stylesheet() {
-	/**
-	 * The wp_enqueue_block_style() function allows us to enqueue a stylesheet
-	 * for a specific block. These stylesheets will only be loaded when the block is rendered
-	 * (both in the editor and on the front end), improving performance
-	 * and reducing the amount of data requested by visitors.
-	 *
-	 * See https://make.wordpress.org/core/2021/12/15/using-multiple-stylesheets-per-block/ for more info.
-	 */
-
-	// Enqueue styles from the core block folder.
-	foreach ( glob( get_parent_theme_file_path( '/build/css/blocks/*.css' ) ) as $stylesheet ) {
-		$block_name = basename( $stylesheet, '.css' );
-		$handle     = 'mbsbt-' . $block_name . '-style';
-
-		wp_enqueue_block_style(
-			'core/' . $block_name,
-			array(
-				'handle' => $handle,
-				'src'    => get_parent_theme_file_uri( '/build/css/blocks/' . $block_name . '.css' ),
-				'ver'    => wp_get_theme( get_template() )->get( 'Version' ),
-				'path'   => $stylesheet,
-			)
-		);
-	}
-}
-
-add_filter( 'init', __NAMESPACE__ . '\enqueue_block_stylesheet', 10, 1 );
-
-/**
  * Forces separate loading of all block stylesheets.
  *
  * This ensures that block styles don't conflict with other styles
@@ -126,7 +92,7 @@ function get_block_stylesheets() {
 }
 
 /**
- * Enqueue assets for specific blocks when requested.
+ * Enqueue assets for specific blocks when requested. (Utility function)
  *
  * @param string|array $blocks The block name(s) to enqueue assets for, e.g. 'core/group'. Accepts a single block name or an array of block names.
  *

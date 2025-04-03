@@ -7,26 +7,20 @@
 
  namespace MBSBT\inc\blockEditor;
 /**
- * Register_wds_category
+ * Register_custom_category
  *
  * @param array $categories block categories.
  * @return array $categories block categories.
  * @author mbsbt
  */
-function register_wds_category( $categories ) {
+function register_custom_category( $categories ) {
 	$custom_block_category = [
 		'slug'  => __( 'custom', 'mbsbt' ),
 		'title' => __( 'Bespoke Blocks', 'mbsbt' ),
 	];
 
-	$categories_sorted    = [];
-	$categories_sorted[0] = $custom_block_category;
-
-	foreach ( $categories as $category ) {
-		$categories_sorted[] = $category;
-	}
-
-	return $categories_sorted;
+	array_unshift( $categories, $custom_block_category );
+  return $categories;
 }
 
-add_filter( 'block_categories_all', __NAMESPACE__ . '\register_wds_category', 10, 1 );
+add_filter( 'block_categories_all', __NAMESPACE__ . '\register_custom_category', 10, 1 );
